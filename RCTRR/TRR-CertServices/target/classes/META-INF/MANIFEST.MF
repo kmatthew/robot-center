@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1525467842481
+Bundle-ManifestVersion: 2
+Bundle-Name: TRR-CertServices
+Bundle-SymbolicName: com.fdc.TRR-CertServices
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_151 (Oracle Corporation)
+Import-Package: javax.ws.rs
+Private-Package: com.fdc.trr.rest.resource,static,static.main.html,sta
+ tic.main.img.img
+Provide-Capability: osgi.service;objectClass:List<String>="com.fdc.trr
+ .rest.resource.Upper"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.3.0)(!(version>=2.0.0)))",osgi.extender;filter:="(&(
+ osgi.extender=osgi.component)(&(version>=1.4.0)(!(version>=2.0.0))))"
+ ,osgi.implementation;filter:="(&(osgi.implementation=osgi.http)(&(ver
+ sion>=1.1.0)(!(version>=2.0.0))))",osgi.implementation;filter:="(&(os
+ gi.implementation=osgi.jaxrs)(&(version>=1.0.0)(!(version>=2.0.0))))"
+ ,osgi.service;filter:="(osgi.jaxrs.media.type=application/json)";reso
+ lution:=optional;effective:=active,osgi.contract;osgi.contract=JavaJA
+ XRS;filter:="(&(osgi.contract=JavaJAXRS)(version=2.1.0))",osgi.ee;fil
+ ter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.fdc.trr.rest.resource.Upper.xml
+Tool: Bnd-4.0.0.201804102256-SNAPSHOT

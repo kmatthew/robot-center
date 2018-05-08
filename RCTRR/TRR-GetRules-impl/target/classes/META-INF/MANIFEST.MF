@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1525730086803
+Bundle-ManifestVersion: 2
+Bundle-Name: TRR-GetRules-impl
+Bundle-SymbolicName: com.fdc.TRR-GetRules-impl
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_151 (Oracle Corporation)
+Export-Package: com.fdc.trr.rules.model;version="1.0.0",com.fdc.trr.ru
+ les.service;version="1.0.0";uses:="com.fdc.trr.rules.model"
+Import-Package: com.fdc.trr.rules.model;version="[1.0,2)",com.fdc.trr.
+ rules.service;version="[1.0,1.1)"
+Private-Package: com.fdc.trr.rules.service.impl
+Provide-Capability: osgi.service;objectClass:List<String>="com.fdc.trr
+ .rules.service.GetRulesService"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.3.0)(!(version>=2.0.0)))",osgi.extender;filter:="(&(
+ osgi.extender=osgi.component)(&(version>=1.4.0)(!(version>=2.0.0))))"
+ ,osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.fdc.trr.rules.service.impl.GetRulesSer
+ viceImpl.xml
+Tool: Bnd-4.0.0.201804102256-SNAPSHOT

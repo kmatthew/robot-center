@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.fdc.trr.rules.service.impl.GetRulesServiceImpl">
+  <implementation class="com.fdc.trr.rules.service.impl.GetRulesServiceImpl"/>
+  <service>
+    <provide interface="com.fdc.trr.rules.service.GetRulesService"/>
+  </service>
+</scr:component>

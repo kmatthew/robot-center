@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1525729770227
+Bundle-ManifestVersion: 2
+Bundle-Name: TRR-GetRules-api
+Bundle-SymbolicName: com.fdc.TRR-GetRules-api
+Bundle-Version: 1.0.0
+Created-By: 1.8.0_151 (Oracle Corporation)
+Export-Package: com.fdc.trr.rules.model;version="1.0.0",com.fdc.trr.ru
+ les.service;version="1.0.0";uses:="com.fdc.trr.rules.model"
+Import-Package: com.fdc.trr.rules.model;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-4.0.0.201804102256-SNAPSHOT

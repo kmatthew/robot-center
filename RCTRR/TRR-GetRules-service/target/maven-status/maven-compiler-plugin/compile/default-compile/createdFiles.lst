@@ -1,0 +1,4 @@
+com\fdc\trr\rules\resource\ExampleAddonResource.class
+com\fdc\trr\rules\resource\JsonpConvertingPlugin.class
+com\fdc\trr\rules\resource\GetRuleResource.class
+com\fdc\trr\rules\resource\JsonpConvertingPlugin$1.class

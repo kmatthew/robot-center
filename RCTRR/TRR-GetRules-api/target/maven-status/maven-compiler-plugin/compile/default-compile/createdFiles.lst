@@ -1,0 +1,5 @@
+com\fdc\trr\rules\service\package-info.class
+com\fdc\trr\rules\model\GetRulesResponse.class
+com\fdc\trr\rules\model\package-info.class
+com\fdc\trr\rules\model\GetRulesRequest.class
+com\fdc\trr\rules\service\GetRulesService.class

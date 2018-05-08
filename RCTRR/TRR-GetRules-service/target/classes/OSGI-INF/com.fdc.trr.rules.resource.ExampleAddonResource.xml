@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.fdc.trr.rules.resource.ExampleAddonResource">
+  <implementation class="com.fdc.trr.rules.resource.ExampleAddonResource"/>
+  <service>
+    <provide interface="com.fdc.trr.rules.resource.ExampleAddonResource"/>
+  </service>
+  <property name="osgi.jaxrs.extension.select" type="String" value="(osgi.jaxrs.media.type=application/json)"/>
+  <property name="osgi.jaxrs.resource" type="Boolean" value="true"/>
+</scr:component>

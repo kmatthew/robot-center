@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.fdc.trr.rest.resource.Upper">
+  <implementation class="com.fdc.trr.rest.resource.Upper"/>
+  <service>
+    <provide interface="com.fdc.trr.rest.resource.Upper"/>
+  </service>
+  <property name="osgi.http.whiteboard.resource.prefix" type="String" value="static"/>
+  <property name="osgi.jaxrs.extension.select" type="String" value="(osgi.jaxrs.media.type=application/json)"/>
+  <property name="osgi.jaxrs.resource" type="Boolean" value="true"/>
+  <property name="osgi.http.whiteboard.resource.pattern" type="String">/quickstart/*</property>
+</scr:component>
